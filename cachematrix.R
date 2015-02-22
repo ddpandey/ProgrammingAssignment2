@@ -1,5 +1,5 @@
 
-## Write a short comment describing this function
+## Generates a cached matrix based on the inputs
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -16,6 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 cacheSolve <- function(x, ...) {
+
+## Invoking the solve() function to return the inverse
+
         m <- x$solve()
         if(!is.null(m)) {
                 message("getting cached data")
